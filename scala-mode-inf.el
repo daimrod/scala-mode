@@ -63,7 +63,10 @@
   :type 'string
   :group 'scala-mode-inf)
 
-(defconst scala-inf-buffer-name "*inferior-scala*")
+(defcustom scala-inf-buffer-name "*inferior-scala*"
+  "Name of the buffer's interpreter."
+  :type 'string
+  :group 'scala-mode-inf)
 
 (define-derived-mode scala-mode-inf comint-mode "Inferior Scala"
   "Major mode for interacting with a Scala interpreter.
